@@ -115,3 +115,45 @@ section form input {
 section label p {
   display: inline;
 }
+
+footer div {
+  height: 105px;
+}
+
+footer div:first-child {
+  margin-bottom: 15px;
+  height: 20px;
+  float: left;
+  clear: both;
+  width: 900px;
+  margin-left: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    white,
+    white 2.5px,
+    rgb(198, 198, 198) 2.5px,
+    rgb(198, 198, 198) 5px
+  );
+}
+
+footer {
+  width: 900px;
+  margin: 30px auto;
+}
+
+footer h3, footer div p, footer img:first-child {
+  float: left;
+}
+
+footer div p {
+  clear: left;
+}
+
+footer button {
+  float: right;
+}
+
+footer div+img {
+  display: block;
+  margin: 30px auto;
+}

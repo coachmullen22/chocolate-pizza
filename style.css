@@ -141,7 +141,7 @@ footer {
   margin: 30px auto;
 }
 
-footer img, footer img+div {
+footer div img, footer img+div {
   float: left;
 }
 
@@ -151,7 +151,7 @@ footer img+div {
 
 footer div div p {
   clear: left;
-  width: 100px;
+  width: 500px;
 }
 
 footer button {
@@ -174,4 +174,16 @@ button {
   color: white;
   border:none;
   font-size:1em;
+}
+
+footer div+div+img {
+  float: none;
+}
+
+footer div+div {
+  height: 110px;
+}
+
+img+p, img+p+p {
+  text-align: center;
 }

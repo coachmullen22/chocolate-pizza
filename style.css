@@ -1,48 +1,159 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+* {
+  /*border: 1px solid rgb(213, 114, 114);*/
+  margin: 0;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+
+
+header {
+  width: 900px;
+  margin: 30px auto 0;
+  padding-bottom: 30px;
+  height: 75px;
 }
-body {
-	line-height: 1;
+
+header img {
+  float: left;
 }
-ol, ul {
-	list-style: none;
+
+header div {
+  float: left;
+  margin-left: 15px;
 }
-blockquote, q {
-	quotes: none;
+
+header nav {
+  float: right;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+nav ul {
+  display: block;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+nav ul li {
+  display: inline-block;
+  margin: 11.5px auto;
+}
+
+header nav+div {
+  height: 20px;
+  margin-top: 30px;
+  float: left;
+  clear: both;
+  width: 900px;
+  margin-left: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    white,
+    white 2.5px,
+    rgb(198, 198, 198) 2.5px,
+    rgb(198, 198, 198) 5px
+  );
+}
+
+#rss {
+  margin-left: 10px;
+}
+
+
+main {
+  width: 900px;
+  margin: 30px auto;
+}
+
+main div h4 {
+  float: left;
+}
+
+main div h4+h4 {
+  float: right;
+}
+
+main div img {
+  float: right;
+  margin-top: 5.5px;
+  margin-right: 5px;
+}
+main div {
+  height: 18px;
+  margin-bottom: 30px;
+}
+
+main div+img {
+  width: 900px;
+  margin-bottom: 30px;
+}
+
+section p {
+  margin-bottom: 30px;
+}
+
+section+section {
+  background-image: url(img/list-bg.png);
+  height: 288px;
+}
+
+section form {
+  display: inline-block;
+  width: 315px;
+  vertical-align: top;
+}
+section form label {
+  display: block;
+  margin-left: 60px;
+  margin-top: 13px;
+}
+
+section form label:first-child {
+  margin-top: 45px;
+}
+
+section form input {
+  margin-right: 5px;
+}
+
+section label p {
+  display: inline;
+}
+
+footer div {
+  height: 105px;
+}
+
+footer div:first-child {
+  margin-bottom: 15px;
+  height: 20px;
+  float: left;
+  clear: both;
+  width: 900px;
+  margin-left: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    white,
+    white 2.5px,
+    rgb(198, 198, 198) 2.5px,
+    rgb(198, 198, 198) 5px
+  );
+}
+
+footer {
+  width: 900px;
+  margin: 30px auto;
+}
+
+footer h3, footer div p, footer img:first-child {
+  float: left;
+}
+
+footer div p {
+  clear: left;
+}
+
+footer button {
+  float: right;
+}
+
+footer div+img {
+  display: block;
+  margin: 30px auto;
 }

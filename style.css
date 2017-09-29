@@ -8,9 +8,9 @@
 
 header {
   width: 960px;
-  margin: 30px auto;
+  margin: 30px auto 0;
   padding-bottom: 30px;
-  height: 45px;
+  height: 75px;
 }
 
 header img {
@@ -53,4 +53,28 @@ header nav+div {
 
 #rss {
   margin-left: 10px;
+}
+
+
+main {
+  width: 960px;
+  margin: 30px auto;
+}
+
+main div h4 {
+  float: left;
+}
+
+main div h4+h4 {
+  float: right;
+}
+
+main div img {
+  float: right;
+  margin-top: 5.5px;
+  margin-right: 5px;
+}
+main div {
+  height: 25px;
+  margin-bottom: 30px;
 }
